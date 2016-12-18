@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="viewport" content="width=320,maximum-scale=4,user-scalable=no,minimal-ui"/>
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title></title>
+
+    <!-- injector:css -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <!-- endinjector -->
+</head>
+<body>
+
+<!-- audio -->
+<audio controls loop id="audio">
+    <source src="assets/audio/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<!-- loading -->
+<div class="loading">
+    <img class="loading-img" src="assets/images/loading01.png" width="42" style="left: 43.5%; top: 41.5%;" />
+</div>
+<!-- end loading -->
+
+<div class="swiper-container hide">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide scene scene01 pr">
+            <img class="pa title" src="assets/images/scene01-01.png" alt="" width="97" style="left: 35.9%; top: 20%"/>
+            <img class="pa logo" src="assets/images/scene01-02.png" alt="" width="140" style="left: 30.4%; bottom: 4.6%"/>
+        </div>
+
+        <div class="swiper-slide scene scene02 pr">
+            <img class="pa para para01" src="assets/images/scene02-01.png" alt="" width="32" style="left: 14.4%; top: 8.1%;"/>
+            <img class="pa para para02" src="assets/images/scene02-02.png" alt="" width="32" style="left: 25.8%; top: 8.1%;"/>
+            <img class="pa para para03" src="assets/images/scene02-03.png" alt="" width="32" style="left: 36.5%; top: 8.1%;"/>
+            <img class="pa para para04" src="assets/images/scene02-04.png" alt="" width="32" style="left: 46.2%; top: 8.1%;"/>
+            <img class="pa slogan" src="assets/images/scene02-05.png" alt="" width="65" style="left: 70%; top: 8.1%"/>
+
+            <div class="bg bg01"></div>
+            <div class="bg bg02"></div>
+            <div class="bg bg03"></div>
+            <div class="bg bg04"></div>
+            <div class="bg bg05"></div>
+            <div class="bg bg06"></div>
+        </div>
+
+        <div class="swiper-slide scene scene03 pr">
+            <img class="pa para para03" src="assets/images/scene03-01.png" alt="" width="32" style="left: 12.3%; bottom: 7.4%;"/>
+            <img class="pa para para04" src="assets/images/scene03-02.png" alt="" width="32" style="left: 24%; bottom: 7.4%;"/>
+            <img class="pa slogan" src="assets/images/scene03-05.png" alt="" width="65" style="left: 11.7%; top: 6.6%"/>
+
+            <div class="bg bg01"></div>
+            <div class="bg bg02"></div>
+            <div class="bg bg03"></div>
+        </div>
+
+        <div class="swiper-slide scene scene04 pr">
+            <img class="pa para para02" src="assets/images/scene04-01.png" alt="" width="32" style="left: 15.7%; bottom: 4.3%;"/>
+            <img class="pa para para03" src="assets/images/scene04-02.png" alt="" width="32" style="left: 26%; bottom: 4.3%;"/>
+            <img class="pa para para04" src="assets/images/scene04-03.png" alt="" width="32" style="left: 36%; bottom: 4.3%;"/>
+            <img class="pa slogan" src="assets/images/scene04-05.png" alt="" width="65" style="left: 69.9%; bottom: 15.4%;"/>
+
+            <div class="bg bg01"></div>
+            <div class="bg bg02"></div>
+            <div class="bg bg03"></div>
+        </div>
+
+        <div class="swiper-slide scene scene05 pr">
+            <img class="pa para para02" src="assets/images/scene05-01.png" alt="" width="32" style="left: 14%; top: 8.5%;"/>
+            <img class="pa para para03" src="assets/images/scene05-02.png" alt="" width="32" style="left: 25.5%; top: 8.5%;"/>
+            <img class="pa para para04" src="assets/images/scene05-03.png" alt="" width="32" style="left: 36.5%; top: 8.5%;"/>
+            <img class="pa slogan" src="assets/images/scene05-05.png" alt="" width="65" style="left: 69.9%; top: 6.4%"/>
+
+            <div class="bg bg01"></div>
+            <div class="bg bg02"></div>
+            <div class="bg bg03"></div>
+            <div class="bg bg04"></div>
+            <div class="bg bg05"></div>
+            <div class="bg bg06"></div>
+            <div class="bg bg07"></div>
+            <div class="bg bg08"></div>
+            <div class="bg bg09"></div>
+            <div class="bg bg10"></div>
+        </div>
+
+        <div class="swiper-slide scene scene06 pr">
+            <img class="pa para para03" src="assets/images/scene06-01.png" alt="" width="32" style="left: 14.5%; top: 5%;"/>
+            <img class="pa para para04" src="assets/images/scene06-02.png" alt="" width="32" style="left: 25.2%; top: 5%;"/>
+            <img class="pa slogan" src="assets/images/scene06-05.png" alt="" width="65" style="left: 70%; top: 6.4%"/>
+
+            <div class="bg bg01"></div>
+            <div class="bg bg02"></div>
+            <div class="bg bg03"></div>
+            <div class="bg bg04"></div>
+            <div class="bg bg05"></div>
+            <div class="bg bg06"></div>
+            <div class="bg bg07"></div>
+            <div class="bg bg08"></div>
+        </div>
+
+        <div class="swiper-slide scene scene07 pr">
+            <!-- 抽奖 -->
+            <div class="try">
+                <img class="zongzi animated" src="assets/images/scene07-01.png" alt="" width="132" style="position:absolute; left: 31.5%; top: 22.1%;"/>
+                <img class="try-btn animated infinite" src="assets/images/scene07-btn01.png" alt="" width="160" style="position:absolute; left: 24.9%; top: 51.5%; z-index: 100;"/>
+            </div>
+            <!-- end 抽奖 -->
+
+            <!-- 没抽取到 -->
+            <div class="not-get hide">
+                <img class="animated" src="assets/images/scene07-02.png" alt="" width="132" style="position:absolute; left: 31.5%; top: 21.9%;"/>
+                <img class="para" src="assets/images/scene07-para02.png" alt="" width="186" style="position:absolute; left: 21.6%; top: 47.3%;"/>
+            </div>
+            <!-- end 没抽取到 -->
+
+            <!-- 活动结束 -->
+            <div class="end hide">
+                <img class="animated" src="assets/images/scene07-03.png" alt="" width="121" style="position:absolute; left: 32%; top: 21.9%;"/>
+                <img class="para" src="assets/images/scene07-para03.png" alt="" width="186" style="position:absolute; left: 21.6%; top: 47.5%;"/>
+            </div>
+            <!-- end 活动结束 -->
+
+            <!-- get-ticket -->
+            <div class="get-ticket hide">
+                <img class="ticket" src="assets/images/scene07-ticket.png" alt="" width="200" style="position:absolute; left: 21.5%; top: 15.7%;"/>
+
+                <div class="form hide">
+                    <div class="form-before">
+                        <img class="after" src="assets/images/scene07-form.png" alt="" width="270"/>
+                        <img src="assets/images/form-before02.png" alt="" width="270"/>
+                        <i class="form-close"></i>
+                        <input class="form-name" type="text" name="username"/>
+                        <input class="form-number" type="number" name="phone"/>
+                        <i class="form-submit"></i>
+                    </div>
+                    <img class="form-after" src="assets/images/scene07-formsuccess.png" alt="" width="270" style="position: absolute; left: 8.4%; top: 17.4%;"/>
+                </div>
+            </div>
+            <!-- end get-ticket -->
+        </div>
+
+        <div class="swiper-slide scene scene08 pr">
+            <img src="assets/images/scene08-01.png" alt="" width="214" style="position: absolute; left: 16.4%; top: 27.8%;"/>
+            <div class="btnGroup">
+                <div class="btn playAgain"></div>
+                <div class="btn shareBtn"></div>
+            </div>
+
+            <!-- share -->
+            <div class="share">
+                <img src="assets/images/share.png" alt="" width="191" style="position: absolute; top: 0; right: 0;"/>
+            </div>
+            <!-- end share -->
+        </div>
+    </div>
+</div>
+
+<!-- injector:js -->
+<!-- page -->
+
+<script src="assets/scripts/jquery-2.1.3.min.js"></script>
+<script src="assets/scripts/swiper.js"></script>
+<script src="assets/scripts/socket.io.js"></script>
+<script src="assets/scripts/main.js"></script>
+
+<!-- less compiler -->
+
+<!-- endinjector -->
+</body>
+</html>
